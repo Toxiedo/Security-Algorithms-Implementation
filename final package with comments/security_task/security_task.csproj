@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1658E46-8823-48D6-8390-887B39C9BADB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>security_task</RootNamespace>
+    <AssemblyName>security_task</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AES_Decryption.cs" />
+    <Compile Include="AES_Encrypion.cs" />
+    <Compile Include="AES_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AES_Form.Designer.cs">
+      <DependentUpon>AES_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicOperations.cs" />
+    <Compile Include="Ceaser.cs" />
+    <Compile Include="CeaserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeaserForm.Designer.cs">
+      <DependentUpon>CeaserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Columnar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Columnar.Designer.cs">
+      <DependentUpon>Columnar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Des.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Des.designer.cs">
+      <DependentUpon>Des.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DESalgo.cs" />
+    <Compile Include="DesTables.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="Encryptionclass.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formx.Designer.cs">
+      <DependentUpon>Formx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hellman.cs" />
+    <Compile Include="hill cipher.cs" />
+    <Compile Include="Hill CipherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hill CipherForm.Designer.cs">
+      <DependentUpon>Hill CipherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hillman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hillman.designer.cs">
+      <DependentUpon>Hillman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MULINVERSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MULINVERSE.Designer.cs">
+      <DependentUpon>MULINVERSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mul_inverse.cs" />
+    <Compile Include="playfair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="playfair.Designer.cs">
+      <DependentUpon>playfair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polyalphabetic FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polyalphabetic FORM.Designer.cs">
+      <DependentUpon>Polyalphabetic FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rail Fence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rail Fence.Designer.cs">
+      <DependentUpon>Rail Fence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC4Form.designer.cs">
+      <DependentUpon>RC4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC4_algo.cs" />
+    <Compile Include="RSA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSA.designer.cs">
+      <DependentUpon>RSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSAalgo.cs" />
+    <Compile Include="Tables.cs" />
+    <EmbeddedResource Include="AES_Form.resx">
+      <DependentUpon>AES_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeaserForm.resx">
+      <DependentUpon>CeaserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columnar.resx">
+      <DependentUpon>Columnar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Des.resx">
+      <DependentUpon>Des.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formx.resx">
+      <DependentUpon>Formx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hill CipherForm.resx">
+      <DependentUpon>Hill CipherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hillman.resx">
+      <DependentUpon>Hillman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MULINVERSE.resx">
+      <DependentUpon>MULINVERSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playfair.resx">
+      <DependentUpon>playfair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polyalphabetic FORM.resx">
+      <DependentUpon>Polyalphabetic FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rail Fence.resx">
+      <DependentUpon>Rail Fence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC4Form.resx">
+      <DependentUpon>RC4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSA.resx">
+      <DependentUpon>RSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
